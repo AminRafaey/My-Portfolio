@@ -22,7 +22,15 @@ const SlideList = [
 ]
 const PortfolioLanding = () => {
     let title = 'About Me',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href="#">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,';
+        description = 
+       `My passion is making ideas come to life, be it working solo, as part of a team or leading a team of fellow developers.
+       
+        Throughout my 3 years of development experience, I worked everywhere from startups to big companies, building products from the ground up or implementing new features.
+        
+        My go-to technologies are React.js, Next.js, and Node.js, and I have completed a wide range of projects using them. I'm always happy to discuss my client's needs and find the best solutions for them.
+        
+        I consider myself creative and hardworking, as my stats show. If you liked my profile so far, drop me a message and we'll discuss how I can be useful to your project.`;
+
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
@@ -40,14 +48,14 @@ const PortfolioLanding = () => {
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            <h1 className="title">Hi, I’m Jone Doe <br/>
+                                            <h1 className="title">Hi, I’m Amin <br/>
                                             <TextLoop>
-                                                <span> JS Developer.</span>
-                                                <span> UI/UX Designer.</span>
-                                                <span> Content Writter.</span>
+                                                <span> React JS Developer.</span>
+                                                <span> Next JS Developer.</span>
+                                                <span> Node JS Developer.</span>
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2>based in USA.</h2>
+                                            <h2>based in Pakistan.</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -69,14 +77,14 @@ const PortfolioLanding = () => {
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-8.jpg" alt="About Images"/>
+                                        <img className="w-100" src="/assets/images/about/MyProfile.jpg" alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="about-inner inner">
                                         <div className="section-title">
                                             <h2 className="title">{title}</h2>
-                                            <p className="description">{description}</p>
+                                            <p className="description" style={{ whiteSpace: "break-spaces", textAlign: "center" }}>{description}</p>
                                         </div>
                                         <div className="row mt--30">
                                             <TabTwo tabStyle="tab-style--1" />
@@ -99,7 +107,7 @@ const PortfolioLanding = () => {
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
                                     <h2 className="title">My Awesome Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <p>Things I'm skilled at and passionate about.</p>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +190,7 @@ const PortfolioLanding = () => {
             {/* Start COntact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
-                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
+                    <ContactThree contactImages="/assets/images/about/AnotherProfile.jpg" contactTitle="Hire Me." />
                 </div>
             </div>
             {/* End COntact Area */}
